@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./style.css" rel="stylesheet"/>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class>
+            <div class="chatGPTHold">
+                <i class="icon fa-regular  fa-pen-to-square" id="chatIcon" style="color: #707070;"></i>
+                <h3>ChatGPT 40 mini</h3>
+                <button class="newChat" id="newChatButton" style ="display:none">New Chat</button>
+            </div>
+            <div class="butHold">
+                <button class="butt1">Log In</button>
+                <button class="butt2">Create new account</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero1">
+        <h1 class="herosH1" id="heroText"></h1>
+    </div>
+
+    <div class="inputHold">
+        <form>
+
+        <i class=" search-icon fa-solid fa-magnifying-glass" style="color: #8a8e93;"></i>
+
+           <input type="text" placeholder="Message ChatGPT" id="search"/>
+
+        <button class="butform" onclick="submitSearch()">
+            <i class="fa-solid fa-arrow-up" style="color: #f4f5f6;"></i>
+        </button>
+    </form>
+    </div>
+    <div class="butt3Hold">
+       <button class="butt3" onclick="populateInput('Summarize text')"> <i class="fa-regular fa-file-lines" style="color: #FFD43B;"></i> Summarize text</button> 
+       <button class="butt3" onclick="populateInput('Help me write')"> <i class="fa-solid fa-pen" style="color: #B197FC;"></i>Help me write</button> 
+       <button class="butt3" onclick="populateInput('Surprise me')"><i class="fa-solid fa-box-tissue" style="color: #63E6BE;"></i>Surprise me</button> 
+       <button class="butt3"onclick="populateInput('Code')"><i class="fa-solid fa-code" style="color: #B197FC;"></i>Code</button> 
+       <button class="butt3"onclick="populateInput('Advice me')"> <i class="fa-solid fa-graduation-cap" style="color: #373aa4;"></i> Advice me</button> 
+       <button class="butt3" id="moreButton">More</button>
+    </div>
+
+    <div class="but5">
+        <div class="morebuton" id="hiddenButtons" style="display: none;">
+            <button class="butt3" onclick="populateInput('Make a plan')"><i class="fa-regular fa-lightbulb" style="color: #FFD43B;"></i> Make a plan</button>
+            <button class="butt3"onclick="populateInput('Brainstorm')"><i class="fa-regular fa-lightbulb" style="color: #FFD43B;"></i> Brainstorm</button>
+        </div>
+    </div>
+
+    <div class="privacy">
+        <p class="message">
+            By messaging ChatGPT, you agree to our 
+            <a href="#" class="link">Terms</a> 
+            and have read our 
+            <a href="#" class="link">Privacy Policy</a>.
+        </p>
+    </div>
+
+    <script src="index.js"></script>
+   
+</body>
+</html>
